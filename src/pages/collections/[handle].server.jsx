@@ -46,7 +46,7 @@ export default function Collection({
           {products.length} {products.length > 1 ? 'products' : 'product'}
         </p>
       </div>
-      <div className="px-20">
+      <div className="px-10">
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
           {products.map((product) => (
             <li key={product.id}>

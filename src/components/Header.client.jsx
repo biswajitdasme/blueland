@@ -1,5 +1,5 @@
-import { Link } from '@shopify/hydrogen/client';
-import { useState } from 'react';
+import {Link} from '@shopify/hydrogen/client';
+import {useState} from 'react';
 import CartToggle from './CartToggle.client';
 import MobileNavigation from './MobileNavigation.client';
 // import CurrencySelector from './CurrencySelector.client';
@@ -12,9 +12,9 @@ export default function Header({collections, storeName}) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="h-20 lg:h-32" role="banner">
+    <header className="h-20 " role="banner">
       <div
-        className={`fixed z-20 h-20 lg:h-32 w-full border-b border-gray-200 px-6 md:px-8 md:py-6 lg:pt-8 lg:pb-0 mx-auto bg-white ${
+        className={`fixed z-20 h-20  w-full border-b border-gray-200 px-6 md:px-8 md:py-6 mx-auto bg-white ${
           isMobileNavOpen ? '' : 'bg-opacity-95'
         }`}
       >
